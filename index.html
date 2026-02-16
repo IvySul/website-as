@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Website as a Room</title>
+
+<!-- Example Pangram Pangram font usage -->
+<link href="https://fonts.cdnfonts.com/css/pp-neue-montreal" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'PP Neue Montreal', sans-serif;
+  background-color: #f4f1ec;
+  transition: all 0.6s ease;
+}
+
+.container {
+  width: 80%;
+  margin: 100px auto;
+  padding: 60px;
+  background: white;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  transition: all 0.6s ease;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.object {
+  background: #e8e4dd;
+  padding: 40px;
+  text-align: center;
+  font-size: 20px;
+  transition: all 0.6s ease;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    background-color: #e0ddd6;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+
+  .container {
+    width: 95%;
+    padding: 20px;
+    margin: 40px auto;
+  }
+
+  .object {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  body {
+    background-color: #d6d2cb;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+  <div>
+    <h1>website as… a room</h1>
+    <p>
+      A website is not just a surface — it is a space.
+      When the browser is wide, the room feels open.
+      When it narrows, the room compresses.
+      The architecture rearranges.
+    </p>
+    <p>
+      Resize the screen to feel the walls move closer.
+    </p>
+  </div>
+
+  <div class="object">
+    🪑 Furniture
+  </div>
+
+  <div class="object">
+    🪟 Window
+  </div>
+
+  <div class="object">
+    🚪 Door
+  </div>
+
+</div>
+
+</body>
+</html>
