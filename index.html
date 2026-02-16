@@ -1,122 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website as Tides</title>
 
-<title>Website as a Room</title>
-
-<!-- Example Pangram Pangram font usage -->
 <link href="https://fonts.cdnfonts.com/css/pp-neue-montreal" rel="stylesheet">
 
 <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'PP Neue Montreal', sans-serif;
+    font-weight: 500;
+    line-height: 1.1em;
+    font-size: 26px;
+    transition: all 0.8s ease;
+}
+
 body {
-  margin: 0;
-  font-family: 'PP Neue Montreal', sans-serif;
-  background-color: #f4f1ec;
-  transition: all 0.6s ease;
+    background: #0e1a26;
+    color: #dce7f2;
+    padding: 2em;
 }
 
-.container {
-  width: 80%;
-  margin: 100px auto;
-  padding: 60px;
-  background: white;
-  box-shadow: 0 40px 80px rgba(0,0,0,0.1);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  transition: all 0.6s ease;
+div {
+    margin-bottom: 1.5em;
+    width: 100%;
 }
 
-h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
+span {
+    color: #7cc6ff;
 }
 
-p {
-  font-size: 18px;
-  line-height: 1.6;
+/* Medium screens */
+@media screen and (min-width: 600px) {
+
+    * {
+        line-height: 1.6em;
+        letter-spacing: 2px;
+        font-size: 22px;
+    }
+
+    body {
+        background: #112b3c;
+    }
+
 }
 
-.object {
-  background: #e8e4dd;
-  padding: 40px;
-  text-align: center;
-  font-size: 20px;
-  transition: all 0.6s ease;
+/* Larger screens */
+@media screen and (min-width: 900px) {
+
+    * {
+        line-height: 2.2em;
+        letter-spacing: 4px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    body {
+        background: #163e59;
+    }
+
 }
 
-/* Tablet */
-@media (max-width: 900px) {
+/* Very large screens */
+@media screen and (min-width: 1200px) {
 
-  .container {
-    grid-template-columns: 1fr;
-  }
+    * {
+        line-height: 3em;
+        letter-spacing: 6px;
+        font-size: 14px;
+        text-align: right;
+    }
 
-  body {
-    background-color: #e0ddd6;
-  }
+    body {
+        background: #1d5678;
+    }
 
-  h1 {
-    font-size: 36px;
-  }
 }
 
-/* Mobile */
-@media (max-width: 500px) {
-
-  .container {
-    width: 95%;
-    padding: 20px;
-    margin: 40px auto;
-  }
-
-  .object {
-    padding: 20px;
-    font-size: 16px;
-  }
-
-  body {
-    background-color: #d6d2cb;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-}
 </style>
-
 </head>
+
 <body>
 
-<div class="container">
-  <div>
-    <h1>website as… a room</h1>
-    <p>
-      A website is not just a surface — it is a space.
-      When the browser is wide, the room feels open.
-      When it narrows, the room compresses.
-      The architecture rearranges.
-    </p>
-    <p>
-      Resize the screen to feel the walls move closer.
-    </p>
-  </div>
+<div>website as… tides</div>
 
-  <div class="object">
-    🪑 Furniture
-  </div>
+<div><span>The website moves.</span> It expands and contracts depending on the container that holds it. Like water responding to gravity, it reshapes itself to fit the shore.</div>
 
-  <div class="object">
-    🪟 Window
-  </div>
+<div><span>Content drifts.</span> Words separate as space increases. Meaning feels farther apart. On smaller screens, everything crowds — like shells revealed at low tide.</div>
 
-  <div class="object">
-    🚪 Door
-  </div>
+<div><span>There is rhythm.</span> The user resizes the window and the page breathes. The margins swell. The letters stretch. Nothing is fixed.</div>
 
-</div>
+<div><span>High tide reveals less.</span> Low tide reveals more. The same material exists — but our access changes with the environment.</div>
 
 </body>
+
 </html>
